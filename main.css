@@ -1,0 +1,6 @@
+body { /* css for any body tags */
+    background-size: cover;
+    background-image: url("bckimg.png");
+    margin: 0;
+    padding: 0;
+}
