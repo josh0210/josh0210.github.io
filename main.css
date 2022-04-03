@@ -1,9 +1,11 @@
 body { /* css for any body tags */
+    background-color:#1c1b42;
     align-self:center;
     background-image: url("bckimgtestfull.png");
     height: 720px;
     background-position:center;
     background-repeat:no-repeat;
+    background-attachment: scroll;
     margin: 0;
     padding: 0;
 }
@@ -18,4 +20,9 @@ h1 {
     height:40px;
     text-align:center;
     padding: 6px;
+}
+image{
+    padding: 0px;
+    align-self:right;
+    
 }
