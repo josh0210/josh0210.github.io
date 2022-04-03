@@ -1,9 +1,21 @@
 body { /* css for any body tags */
     align-self:center;
-    background-image: url("bckimg.png");
+    background-image: url("bckimgtestfull.png");
     height: 720px;
-    background-position:left;
+    background-position:center;
     background-repeat:no-repeat;
     margin: 0;
     padding: 0;
+}
+h1 {
+    font-family: "Lucida Sans Unicode"; 
+    font-size: 24px; font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
+    background-color:white;
+    width:auto;
+    height:40px;
+    text-align:center;
+    padding: 6px;
 }
