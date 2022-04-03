@@ -1,6 +1,9 @@
 body { /* css for any body tags */
-    background-size: cover;
+    align-self:center;
     background-image: url("bckimg.png");
+    height: 720px;
+    background-position:left;
+    background-repeat:no-repeat;
     margin: 0;
     padding: 0;
 }
