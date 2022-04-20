@@ -2,6 +2,17 @@
 <html>
   <head>
     <link rel="stylesheet" href="main.css" />
+    <script>
+      function showModel1() {
+        document.getElementById("model").src =
+          "https://sketchfab.com/models/385fa9f09a064c8b8d81e5085e2d76f4/embed";
+      }
+      function showModel2() {
+        document.getElementById("model").src =
+          "https://sketchfab.com/models/bf69eb00eaba4df3851b510f941a3c7a/embed";
+        document.getElementById("model").title = "Military telescope";
+      }
+    </script>
   </head>
 
   <body>
@@ -11,8 +22,7 @@
       </a>
     </header> -->
     <main>
-      <section class="intro"></section>
-      <div class="center">
+      <section class="intro">
         <h1>Herschel 200 Year Rememberance</h1>
         <p>
           This is placeholder text explaining the project/herschelsThis is
@@ -27,7 +37,7 @@
           project/herschelsThis is placeholder text explaining the
           project/herschels
         </p>
-      </div>
+      </section>
       <section id="timeline">
         <div class="timeline-section uranus">
           <img class="timeline-img" src="images/uranus.png" />
@@ -78,6 +88,9 @@
           </div>
         </div>
       </section>
+      <section class="intro">
+        <h1>So what did he use...</h1>
+      </section>
       <section id="model-container">
         <h1>20ft Telescope</h1>
         <div id="sketchfab-embed-wrapper">
@@ -100,7 +113,14 @@
           >
           </iframe>
         </div>
-        <h2>Subheading</h2>
+        <div class="thumbnail-container">
+          <button class="thumbnail" onclick="showModel1()">3D Model</button>
+          <button class="thumbnail" onclick="showModel2()">
+            Exploded view
+          </button>
+        </div>
+
+        <h2>Subheading for model description</h2>
         <p class="model-text">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -111,6 +131,19 @@
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </section>
+      <section class="intro">
+        <h1>Why the 20ft over the others?</h1>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. "Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
+      <section id="history"></section>
     </main>
   </body>
 </html>
