@@ -15,7 +15,7 @@ header {
   align-items: center;
   background-color: #eee;
   padding: 15px;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .logo {
@@ -23,19 +23,31 @@ header {
   height: 80px;
 }
 
-h1 {
-  margin: auto;
+.intro {
   font-family: "Lucida Sans Unicode";
   font-size: 48px;
   color: rgb(143, 149, 152) 111;
 }
 
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #eee;
+}
+
 /* timeline styles */
 
 #timeline {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  grid-template-rows: repeat(6, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  grid-template-rows: repeat(10, 1fr);
+  max-width: 1200px; */
 }
 
 .timeline-section {
@@ -43,17 +55,17 @@ h1 {
   align-items: center;
   color: #eee;
   padding: 20px;
-  min-width: 900px;
+  max-width: 1400px;
 }
 
 .timeline-text {
-  line-height: 150%;
-  font-stretch: condensed;
+  line-height: 2rem;
+  width: 60%;
 }
 
 .timeline-img {
-  width: 500px;
-  height: 400px;
+  width: 40%;
+  max-height: 40%;
 }
 
 .uranus {
@@ -61,11 +73,11 @@ h1 {
 }
 
 .milkyway {
-  grid-area: 3 / 4 / 4 / 7;
+  align-self: flex-end;
 }
 
 .comets {
-  grid-area: 5 / 1 / 6 / 4;
+  grid-area: 8 / 1 / 10 / 4;
 }
 
 /* model styles */
