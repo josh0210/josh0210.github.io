@@ -76,7 +76,7 @@ h2 {
 }
 
 .uranus {
-  /* grid-area: 1 / 1 / 2 / 4; */
+  grid-area: 1 / 1 / 2 / 4;
 }
 
 .milkyway {
@@ -84,7 +84,7 @@ h2 {
 }
 
 .comets {
-  /* grid-area: 8 / 1 / 10 / 4; */
+  grid-area: 8 / 1 / 10 / 4;
 }
 
 /* model styles */
@@ -141,7 +141,7 @@ h2 {
   align-items: center;
   color: #eee;
   padding: 20px;
-  max-width: 1000px;
+  max-width: 1400px;
   min-height: 100vh;
 }
 
