@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
+/* global styles */
+
 body {
   /* min-width: 100vw; */
   min-height: 100vh;
@@ -16,6 +18,10 @@ header {
   background-color: #eee;
   padding: 15px;
   width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .logo {
@@ -70,7 +76,7 @@ header {
 }
 
 .uranus {
-  grid-area: 1 / 1 / 2 / 4;
+  /* grid-area: 1 / 1 / 2 / 4; */
 }
 
 .milkyway {
@@ -78,7 +84,7 @@ header {
 }
 
 .comets {
-  grid-area: 8 / 1 / 10 / 4;
+  /* grid-area: 8 / 1 / 10 / 4; */
 }
 
 /* model styles */
@@ -120,4 +126,36 @@ header {
   text-align: center;
   padding: 0px 100px;
   margin-bottom: 100px;
+}
+
+/* history styles */
+
+#history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history-section {
+  display: flex;
+  align-items: center;
+  color: #eee;
+  padding: 20px;
+  max-width: 1000px;
+  min-height: 100vh;
+}
+
+.history-image {
+  width: 30%;
+  max-height: 40%;
+}
+
+.history-text {
+  width: 50%;
+  line-height: 2rem;
+  padding: 30px;
+}
+
+.forty-foot {
+  align-self: flex-end;
 }
