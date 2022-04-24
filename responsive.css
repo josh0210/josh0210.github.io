@@ -1,6 +1,21 @@
 @media screen and (max-width: 1024px) and (min-width: 801px) {
-  body {
-    background-color: rgb(97, 106, 241);
+  .timeline-section {
+    display: flex;
+    align-items: center;
+    color: #eee;
+    padding: 20px;
+    max-width: 1000px;
+    min-height: 100vh;
+  }
+
+  .timeline-text {
+    line-height: 2rem;
+    width: 50%;
+  }
+
+  .timeline-img {
+    width: 45%;
+    max-height: 45%;
   }
 }
 
@@ -11,7 +26,23 @@
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    background-color: rgb(161, 159, 214);
+  .timeline-section {
+    display: flex;
+    align-items: center;
+    color: #eee;
+    padding: 20px;
+    max-width: 1000px;
+    /* min-width: 800px; */
+    min-height: 100vh;
+  }
+
+  .timeline-text {
+    line-height: 2rem;
+    width: 30%;
+  }
+
+  .timeline-img {
+    width: 60%;
+    max-height: 60%;
   }
 }

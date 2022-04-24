@@ -8,7 +8,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #1c1b42;
+  background: url(images/space.jpg);
   font-family: "Roboto Mono", monospace;
 }
 
@@ -146,7 +146,7 @@ h2 {
 }
 
 .history-image {
-  width: 30%;
+  width: 35%;
   max-height: 40%;
 }
 
