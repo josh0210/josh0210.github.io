@@ -15,29 +15,46 @@ body {
 header {
   display: flex;
   align-items: center;
-  background-color: #eee;
+  justify-content: space-between;
+  color: #eee;
   padding: 15px;
   width: 100%;
+  font-size: 1.8rem;
+}
+
+.social-media-container {
+  display: flex;
+  padding: 20px;
+}
+
+.social-media-links {
+  width: 50px;
+  margin: 10px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: "Roboto Mono";
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1rem;
-  color: rgb(143, 149, 152) 111;
+  font-size: 1.5rem;
+  line-height: 3rem;
   text-align: center;
   color: #eee;
-  margin-bottom: 200px;
+  margin: 50px 0px 200px 0px;
+}
+
+.padded-text {
+  padding: 0px 15%;
 }
 
 .intro h1 {
@@ -62,10 +79,11 @@ h2 {
   color: #eee;
   padding: 20px;
   max-width: 1400px;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .timeline-text {
+  font-size: 1.5rem;
   line-height: 2rem;
   width: 60%;
 }
