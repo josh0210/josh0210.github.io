@@ -2,6 +2,10 @@
 
 /* global styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* min-width: 100vw; */
   min-height: 100vh;
@@ -18,13 +22,12 @@ header {
   justify-content: space-between;
   color: #eee;
   padding: 15px;
-  width: 100%;
+  /* width: 100%; */
   font-size: 1.8rem;
 }
 
 .social-media-container {
   display: flex;
-  padding: 20px;
 }
 
 .social-media-links {
@@ -59,6 +62,24 @@ h2 {
 
 .intro h1 {
   font-size: 3rem;
+}
+
+/* nav styles */
+
+nav {
+  position: fixed;
+  top: 50%;
+}
+
+nav a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  color: #eee;
+  list-style: none;
+  padding: 20px;
 }
 
 /* timeline styles */
