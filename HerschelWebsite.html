@@ -8,24 +8,45 @@
     <script>
       function showModel1() {
         document.getElementById("model").src =
-          "https://sketchfab.com/models/385fa9f09a064c8b8d81e5085e2d76f4/embed";
+          "https://sketchfab.com/models/d481397bfc5045469942dd74075d729a/embed";
       }
       function showModel2() {
         document.getElementById("model").src =
           "https://sketchfab.com/models/bf69eb00eaba4df3851b510f941a3c7a/embed";
         document.getElementById("model").title = "Military telescope";
       }
+      function openNav() {
+        document
+          .getElementsByClassName("nav-container")[0]
+          .classList.add("nav-active");
+        document.getElementById("nav-arrow").onclick = closeNav;
+        document.getElementById("nav-arrow").classList.add("arrow-rotate");
+      }
+      function closeNav() {
+        document
+          .getElementsByClassName("nav-container")[0]
+          .classList.remove("nav-active");
+        document.getElementById("nav-arrow").onclick = openNav;
+        document.getElementById("nav-arrow").classList.remove("arrow-rotate");
+      }
     </script>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <a href="#timeline"><li>Timeline</li></a>
-        <a href="#model-container"><li>Models</li></a>
-        <a href="#history-nav"><li>History</li></a>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <li id="nav">
+        <ul>
+          <a class="nav-link" href="#timeline">Timeline</a>
+        </ul>
+        <ul>
+          <a class="nav-link" href="#model">Model</a>
+        </ul>
+        <ul>
+          <a class="nav-link" href="#history">History</a>
+        </ul>
+      </li>
+      <img id="nav-arrow" src="images/right-arrow.png" onclick="openNav()" />
+    </div>
     <header>
       <a href="https://herschelmuseum.org.uk/" target="_blank">
         <img class="logo" src="/images/herschellogo2.png" />
@@ -106,7 +127,7 @@
             execution-while-out-of-viewport
             execution-while-not-rendered
             web-share
-            src="https://sketchfab.com/models/385fa9f09a064c8b8d81e5085e2d76f4/embed"
+            src="https://sketchfab.com/models/d481397bfc5045469942dd74075d729a/embed"
           >
           </iframe>
         </div>
@@ -129,7 +150,7 @@
         </p>
       </section>
       <section id="history-nav" class="intro">
-        <h1>Why the 20ft over the others?</h1>
+        <h1>How has this impacted today's astronomy?</h1>
         <p class="padded-text">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
