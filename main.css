@@ -26,6 +26,16 @@ header {
   font-size: 1.8rem;
 }
 
+h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+span {
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
 .social-media-container {
   display: flex;
 }
@@ -38,6 +48,7 @@ header {
 h2 {
   font-size: 3rem;
   font-family: "Roboto Mono";
+  line-height: 120%;
 }
 
 .logo {
@@ -97,7 +108,7 @@ h2 {
 
 .nav-active {
   left: 0px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 ul {
@@ -138,13 +149,14 @@ ul:hover {
   color: #eee;
   padding: 20px;
   max-width: 1400px;
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 .timeline-text {
   font-size: 1.5rem;
   line-height: 2rem;
   width: 60%;
+  padding-right: 15%;
 }
 
 .timeline-img {
@@ -156,9 +168,9 @@ ul:hover {
   grid-area: 1 / 1 / 2 / 4;
 }
 
-.milkyway {
+/* .milkyway {
   align-self: flex-end;
-}
+} */
 
 .comets {
   grid-area: 8 / 1 / 10 / 4;
