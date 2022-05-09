@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+/* global styles */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* min-width: 100vw; */
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(images/space.jpg);
+  font-family: "Roboto Mono", monospace;
+}
+
+header {
+    align-self:center;
+  color: #eee;
+  padding: 10px;
+  width: 90%;
+  font-size: 1.8rem;
+  grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+    line-height: 1.5rem; 
+    text-align:center;
+}
+
+.social-media-links {
+  width: 50px;
+    margin:10px;
+    float:right;
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+    float:left;
+    grid-column-start:1;
+    grid-column-end:3;
+    padding:10px;
+}
+
+
+.nav-container {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 40%;
+  left: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.75s;
+}
+
+#nav-arrow {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.75s;
+}
+
+.arrow-rotate {
+  transition: all 0.75s;
+  transform: rotate(180deg);
+}
+
+#nav {
+  list-style: none;
+}
+
+.nav-active {
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+ul {
+  cursor: pointer;
+  width: 100px;
+  /* background-color: #b3b5bd; */
+  padding: 20px;
+  margin: 10px 10px 10px 0px;
+  color: black;
+  text-align: center;
+}
+
+ul:hover {
+  background-color: rgba(129, 129, 129, 0);
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+
+h2 {
+  font-size: 2rem;
+}
+
+
+.intro {
+  font-size: 1.5rem;
+  color: rgb(143, 149, 152) 111;
+  text-align: center;
+  color: #eee;
+  margin-bottom: 100px;
+  grid-column-start:2;
+  grid-column-end:4;
+
+}
+
+
+.intro h1 {
+  font-size: 3rem;
+  
+}
+
+
+/* timeline styles */
+
+#timeline {
+    width:100%;
+    grid-column-start: 2;
+    grid-column-end:4;
+    grid-row-start:3;
+    grid-row-end:5;
+      
+    
+}
+
+.timeline-section {
+  display: flex;
+  align-items: center;
+  color: #eee;
+  max-width: 1400px;
+  min-height: 100vh;
+}
+
+.timeline-text {
+    font-size: 1.5rem;
+  line-height: 2rem;
+    color:#fff;
+    width:auto;
+    grid-column-start:3;
+    grid-column-end:4;
+   
+}
+
+.timeline-img {
+  width: 20%;
+  max-height: 80%;
+    grid-column-start:2;
+    grid-column-end:3;
+    float:left;
+}
+
+/* model styles */
+
+#model-container {
+   align-items:center;
+  float:center;
+  color: #eee;
+  grid-column-start:2;
+  grid-column-end:4;
+  grid-row-start:6;
+  grid-row-end:7;
+}
+
+
+#sketchfab-embed-wrapper {
+    width:80%;
+    height:500px;
+    float:right;
+    align-items:center;
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:6;
+    grid-row-end:7;
+}
+
+.thumbnail-container {
+  width: 800px;
+    float:center;
+    align-items:center;
+  grid-row-start:7; 
+  grid-row-end:8;
+}
+
+.thumbnail {
+  width: 125px;
+  height: 100px;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  float:center;    
+}
+
+.model-text {
+  text-align: center;
+  padding: 0px 100px;
+  margin-bottom: 100px;
+}
+
+/*grid layout*/
+
+.grid-container {
+      display:grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows:auto auto auto auto auto auto auto auto auto;
+      
+    
+} 
+/* column classes */
+.col-1{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end: 6;
+    width: 10%;
+    float:left;
+    padding: 35px;
+    }
+
+.col-uranus {
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:3;
+    width: 100%;
+    float:left;
+    padding; 25px;
+    
+}
+
+.col-moons {
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:3;
+    grid-row-end:4;
+    width: 100%;
+    float:left;
+    padding:25px;
+    
+}
+.col-galaxy {
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:4;
+    grid-row-end:5;
+    width: 100%;
+    float:left;
+    padding:25px;
+    
+}
+.col-4 {
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end: 6;
+    float:left;
+    width: 10%;
+    padding: 35px;
+}
