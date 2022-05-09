@@ -16,17 +16,17 @@ body {
 }
 
 header {
-    align-self:center;
+  align-self:center;
   color: #eee;
   padding: 10px;
-  width: 90%;
+  width: 100%;
   font-size: 1.8rem;
   grid-column-start:1;
-    grid-column-end:5;
-    grid-row-start:1;
-    grid-row-end:2;
-    line-height: 1.5rem; 
-    text-align:center;
+  grid-column-end:5;
+  grid-row-start:1;
+  grid-row-end:2;
+  line-height: 1.5rem; 
+  text-align:center;
 }
 
 .social-media-links {
@@ -170,7 +170,7 @@ h2 {
 /* model styles */
 
 #model-container {
-   align-items:center;
+  align-items:center;
   float:center;
   color: #eee;
   grid-column-start:2;
@@ -192,9 +192,9 @@ h2 {
 }
 
 .thumbnail-container {
-  width: 800px;
-    float:center;
-    align-items:center;
+  width: 80%;
+  float:center;
+  align-items:center;
   grid-row-start:7; 
   grid-row-end:8;
 }
