@@ -1,67 +1,129 @@
-/*
-@media screen and (max-width: 1024px) and (min-width: 801px) {
-  .timeline-section {
-    display: flex;
-    align-items: center;
-    color: #eee;
-    padding: 20px;
-    max-width: 1000px;
-    min-height: 100vh;
+@media screen and (max-width: 801px) and (min-width: 1920px) {
+}
+
+@media screen and (max-width: 800px) and (min-width: 481px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  header {
+    grid-area: 1 / 1 / 3 / 7;
+    font-size: 1.4rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
   }
 
   .timeline-text {
     line-height: 2rem;
-    width: 50%;
+    width: 0%;
   }
 
   .timeline-img {
-    width: 45%;
-    max-height: 45%;
+    width: 95%;
+    /* max-width: 100px; */
+    max-height: 95%;
   }
-}
 
-@media screen and (max-width: 800px) and (min-width: 481px) {
-  body {
-    background-color: rgb(118, 119, 212);
+  #uranus {
+    grid-area: 4 / 3 / 5 / 5;
+  }
+
+  #titania {
+    grid-area: 5 / 3 / 6 / 5;
+  }
+
+  #titania img {
+    max-width: 110px;
+  }
+
+  #oberon {
+    grid-area: 6 / 3 / 7 / 5;
+  }
+
+  #oberon img {
+    max-width: 90px;
+  }
+
+  #mimas {
+    grid-area: 7 / 3 / 8 / 5;
+  }
+
+  #mimas img {
+    max-width: 140px;
+  }
+
+  #moons {
+    grid-area: 8 / 3 / 9 / 5;
+  }
+
+  #galaxy {
+    grid-area: 9 / 3 / 10 / 5;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .timeline-section {
-    display: flex;
-    align-items: center;
-    color: #eee;
-    padding: 20px;
-    max-width: 1000px;
-    min-width: 800px; 
-    min-height: 100vh;
-    
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 
+  header {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 1.2rem;
+  }
+
+  header p {
+    padding: 0px;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 
   .timeline-text {
     line-height: 2rem;
-    width: 30%;
+    width: 0%;
   }
 
   .timeline-img {
-    width: 100%;
-    max-height: 100%
+    width: 50%;
+    /* max-width: 100px; */
+    max-height: 50%;
+  }
+
+  #uranus {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  #titania {
+    grid-area: 5 / 2 / 6 / 3;
+  }
+
+  #titania img {
+    max-width: 100px;
+  }
+
+  #oberon {
+    grid-area: 6 / 2 / 7 / 3;
+  }
+
+  #oberon img {
+    max-width: 80px;
+  }
+
+  #mimas {
+    grid-area: 7 / 2 / 8 / 3;
+  }
+
+  #mimas img {
+    max-width: 130px;
+  }
+
+  #moons {
+    grid-area: 8 / 2 / 9 / 3;
+  }
+
+  #galaxy {
+    grid-area: 9 / 2 / 10 /3;
   }
 }
-
-@media only screen and (max-width: 768px) {
-  For mobile phones:
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
-    {
-  box-sizing: border-box;
-}
- 
-    
-
-
-
