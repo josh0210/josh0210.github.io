@@ -186,6 +186,24 @@ ul:hover {
   color: #eee;
 }
 
+.model-nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.model-arrow {
+  width: 75px;
+  height: 75px;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.model-arrow-disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
 #sketchfab-embed-wrapper {
   width: 700px;
   height: 700px;
@@ -195,19 +213,23 @@ ul:hover {
 
 .thumbnail-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 800px;
 }
 
 .thumbnail {
-  width: 125px;
-  height: 100px;
-  padding: 10;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
   margin: 50px;
-  border-radius: 5px;
-  background-size: cover;
-  background-repeat: no-repeat;
   border: none;
+  cursor: default;
+  background-color: #eee;
+  transition: all 0.5s;
+}
+
+.thumbnail-disabled {
+  opacity: 0.2;
   cursor: pointer;
 }
 

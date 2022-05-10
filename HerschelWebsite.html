@@ -9,11 +9,19 @@
       function showModel1() {
         document.getElementById("model").src =
           "https://sketchfab.com/models/d481397bfc5045469942dd74075d729a/embed";
+          document.getElementsByClassName("thumbnail")[1].classList.add("thumbnail-disabled");
+          document.getElementsByClassName("thumbnail")[0].classList.remove("thumbnail-disabled");
+          document.getElementsByClassName("model-arrow")[0].classList.add("model-arrow-disabled");
+          document.getElementsByClassName("model-arrow")[1].classList.remove("model-arrow-disabled");
       }
       function showModel2() {
         document.getElementById("model").src =
           "https://sketchfab.com/models/bf69eb00eaba4df3851b510f941a3c7a/embed";
         document.getElementById("model").title = "Military telescope";
+        document.getElementsByClassName("thumbnail")[0].classList.add("thumbnail-disabled");
+        document.getElementsByClassName("thumbnail")[1].classList.remove("thumbnail-disabled");
+        document.getElementsByClassName("model-arrow")[1].classList.add("model-arrow-disabled");
+        document.getElementsByClassName("model-arrow")[0].classList.remove("model-arrow-disabled");
       }
       function openNav() {
         document
@@ -45,7 +53,7 @@
           <a class="nav-link" href="#history">History</a>
         </ul>
       </li>
-      <img id="nav-arrow" src="images/right-arrow.png" onclick="openNav()" />
+      <img id="nav-arrow" src="images/arrow-black.png" onclick="openNav()" />
     </div>
     <header>
       <a href="https://herschelmuseum.org.uk/" target="_blank">
@@ -114,7 +122,9 @@
       </section>
       <section id="model-container">
         <h1>20ft Telescope</h1>
-        <div id="sketchfab-embed-wrapper">
+        <div class="model-nav-container">
+          <img class="model-arrow model-arrow-disabled" src="images/arrow-white-left.png" onclick="showModel1()">        
+          <div id="sketchfab-embed-wrapper">
           <iframe
             id="model"
             title="Gregorian reflecting telescope (1700s)"
@@ -134,10 +144,12 @@
           >
           </iframe>
         </div>
+        <img class="model-arrow" src="images/arrow-white-right.png" onclick="showModel2()">        
+      </div>
+
         <div class="thumbnail-container">
-          <button class="thumbnail" onclick="showModel1()">3D Model</button>
-          <button class="thumbnail" onclick="showModel2()">
-            Exploded view
+          <button class="thumbnail" onclick="showModel1()"></button>
+          <button class="thumbnail thumbnail-disabled" onclick="showModel2()">
           </button>
         </div>
 
