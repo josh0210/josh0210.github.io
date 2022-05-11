@@ -24,9 +24,8 @@
   }
 
   .timeline-img {
-    width: 55%;
+    width: 150px;
     /* max-width: 100px; */
-    max-height: 95%;
   }
 
   #uranus {
@@ -38,7 +37,7 @@
   }
 
   #titania img {
-    max-width: 110px;
+    max-width: 80px;
   }
 
   #oberon {
@@ -46,7 +45,7 @@
   }
 
   #oberon img {
-    max-width: 90px;
+    max-width: 70px;
   }
 
   #mimas {
@@ -54,7 +53,7 @@
   }
 
   #mimas img {
-    max-width: 140px;
+    max-width: 60px;
   }
 
   #moons {
@@ -117,7 +116,7 @@
   }
 
   .timeline-img {
-    width: 50%;
+    width: 120px;
     /* max-width: 100px; */
     max-height: 50%;
   }
@@ -131,7 +130,7 @@
   }
 
   #titania img {
-    max-width: 100px;
+    max-width: 60px;
   }
 
   #oberon {
@@ -139,7 +138,7 @@
   }
 
   #oberon img {
-    max-width: 80px;
+    max-width: 50px;
   }
 
   #mimas {
@@ -147,7 +146,7 @@
   }
 
   #mimas img {
-    max-width: 130px;
+    max-width: 40px;
   }
 
   #moons {
