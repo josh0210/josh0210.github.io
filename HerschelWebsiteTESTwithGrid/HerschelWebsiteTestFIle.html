@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mainTest.css" />
     <link rel="stylesheet" href="responsiveTest.css" />
-    <script>
+    <script src="/scripts.js"></script>
+    <!-- <script>
       function showModel1() {
         document.getElementById("model").src =
           "https://sketchfab.com/models/d481397bfc5045469942dd74075d729a/embed";
@@ -29,7 +30,7 @@
         document.getElementById("nav-arrow").onclick = openNav;
         document.getElementById("nav-arrow").classList.remove("arrow-rotate");
       }
-    </script>
+    </script> -->
   </head>
 
   <body>
@@ -55,7 +56,7 @@
               <img class="logo" src="images/herschellogo2.png"
             /></a> -->
 
-            Herschel 200 Year Rememberance
+            Herschel 200
 
             <!-- <a href="https://www.facebook.com/groups/bathhs" target="_blank">
             <img class="social-media-links" src="images/facebook.png"/></a>
@@ -63,7 +64,7 @@
         <a href="https://twitter.com/c_herschelsoc" target="_blank">
             <img class="social-media-links" src="images/twitter.png"/></a> -->
           </h1>
-          <p>
+          <p class="padded-text">
             Commemorating 200 years since the death of William Herschel, this
             project aims to celebrate his work as well as the impact he had on
             science and the way we view the universe. Showcasing Herschel's 20ft
@@ -78,7 +79,7 @@
         <!-- <section id="timeline"> -->
         <!-- <img id="line" src="images/line2.png" /> -->
         <div id="uranus" class="timeline-section">
-          <img class="timeline-img" src="images/uranus2.png" />
+          <img class="timeline-img" src="images/uranus.png" />
           <div class="timeline-text">
             <h2>URANUS</h2>
             <p>
@@ -153,33 +154,58 @@
         </section> -->
 
         <section id="model-container">
-          <div id="sketchfab-embed-wrapper">
-            <iframe
-              id="model"
-              title="Gregorian reflecting telescope (1700s)"
-              width="100%"
-              height="100%"
-              ui_hint="2"
-              frameborder="0"
-              allowfullscreen
-              mozallowfullscreen="true"
-              webkitallowfullscreen="true"
-              allow="autoplay; fullscreen; xr-spatial-tracking"
-              xr-spatial-tracking
-              execution-while-out-of-viewport
-              execution-while-not-rendered
-              web-share
-              src="https://sketchfab.com/models/d481397bfc5045469942dd74075d729a/embed"
-            >
-            </iframe>
+          <div class="model-nav-container">
+            <img
+              class="model-arrow model-arrow-disabled"
+              src="images/arrow-white-left.png"
+              onclick="showModel1()"
+            />
+            <div id="sketchfab-embed-wrapper">
+              <iframe
+                id="model"
+                title="Gregorian reflecting telescope (1700s)"
+                width="100%"
+                height="100%"
+                ui_hint="2"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+                src="https://sketchfab.com/models/d481397bfc5045469942dd74075d729a/embed"
+              >
+              </iframe>
+            </div>
+            <img
+              class="model-arrow"
+              src="images/arrow-white-right.png"
+              onclick="showModel2()"
+            />
+          </div>
+
+          <div class="thumbnail-container">
+            <button class="thumbnail" onclick="showModel1()"></button>
+            <button
+              class="thumbnail thumbnail-disabled"
+              onclick="showModel2()"
+            ></button>
           </div>
         </section>
-        <div class="thumbnail-container">
-          <button class="thumbnail-1" onclick="showModel1()">3D Model</button>
-          <button class="thumbnail-2" onclick="showModel2()">
-            Exploded view
-          </button>
-        </div>
+        <!-- <h2>Subheading for model description</h2>
+        <p class="model-text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. "Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p> -->
+
         <br />
         <!-- <section class="intro">
           <h2>Subheading for model description</h2>
@@ -193,9 +219,9 @@
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.
           </p>
-        </section> -->
+        </section>
 
-        <!-- <section class="intro">
+        <section class="intro">
           <h1>Why the 20ft over the others?</h1>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
