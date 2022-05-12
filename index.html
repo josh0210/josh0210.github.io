@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="responsive.css" />
     <script src="/scripts.js"></script>
   </head>
+
   <body>
     <nav class="nav-container">
-      <li id="nav">
+      <li class="nav">
         <ul>
           <a class="nav-link" href="#timeline">Timeline</a>
         </ul>
@@ -22,138 +23,146 @@
       </li>
       <img id="nav-arrow" src="images/right-arrow.png" onclick="openNav()" />
     </nav>
-    <main>
-      <div class="grid-container">
-        <header>
-          <h1>Herschel 200</h1>
-          <p class="padded-text">
-            Commemorating 200 years since the death of William Herschel, this
-            project aims to celebrate his work as well as the impact he had on
-            science and the way we view the universe. Showcasing Herschel's 20ft
-            telescope, this collaboration between Bath Spa University and the
-            Herschel Society in Bath will bring to life the story of the 20ft
-            telescope whilst giving furhter insight into the creation of this
-            innovative piece of technology.
-          </p>
-        </header>
 
-        <!-- <img id="line" src="images/line2.png" /> -->
-        <div id="uranus" class="timeline-section">
-          <img class="timeline-img" src="images/uranus3.png" />
-          <div class="timeline-text">
-            <h2>URANUS</h2>
-            <p>
-              Not only significant for the discovery of a sixth planet, but
-              Uranus discovered in 1781 also doubled the size of the known
-              universe.
-            </p>
-          </div>
-        </div>
+    <main class="grid-container">
+      <header>
+        <h1>Herschel 200</h1>
+        <p>
+          William Herschel was a musician born in Hanover in 1738. He moved to
+          England in 1757, and settled in Bath where he was a church
+          organist.<br /><br />Herschel lived in the time of great scientific
+          progress in Europe. He was a passionate astronomer and developed new
+          telescopes to fuel his mission to map celestial objects in the night
+          sky. His telescopes became so popular that he sold them widely and
+          received commissions from royalty.<br /><br />Using his telescopes
+          Herschel made many key discoveries:
+        </p>
+      </header>
 
-        <div id="titania" class="timeline-section">
-          <img class="timeline-img" src="images/titania.png" />
-          <div class="timeline-text">
-            <h2>TITANIA</h2>
-            <p>
-              Titania discovered in 1787 is the largest moon of Uranus, it is
-              also the eight largest moon in the solar system.
-            </p>
-          </div>
-        </div>
-
-        <div id="oberon" class="timeline-section">
-          <img class="timeline-img" src="images/oberon.png" />
-          <div class="timeline-text">
-            <h2>OBERON</h2>
-            <p>
-              Titania discovered in 1787 is the largest moon of Uranus, it is
-              also the eight largest moon in the solar system.
-            </p>
-          </div>
-        </div>
-
-        <div id="mimas" class="timeline-section">
-          <img class="timeline-img" src="images/mimas.png" />
-          <div class="timeline-text">
-            <h2>MIMAS</h2>
-            <p>
-              Titania discovered in 1787 is the largest moon of Uranus, it is
-              also the eight largest moon in the solar system.
-            </p>
-          </div>
-        </div>
-
-        <div id="galaxy" class="timeline-section">
-          <img class="timeline-img" src="images/milkyway.png" />
-
-          <div class="timeline-text">
-            <h2>GALAXIES & STAR CLUSTERS</h2>
-            <p>
-              William published three catalogues, he noted that he discovered
-              and catalogued 2500 new nebulae and star clusters.
-            </p>
-          </div>
-        </div>
-
-        <section id="model-container">
-          <div class="model-nav-container">
-            <img
-              class="model-arrow model-arrow-disabled"
-              src="images/arrow-white-left.png"
-              onclick="showModel1()"
-            />
-            <div id="sketchfab-embed-wrapper">
-              <iframe
-                id="model"
-                title="Gregorian reflecting telescope (1700s)"
-                width="100%"
-                height="100%"
-                ui_hint="2"
-                frameborder="0"
-                allowfullscreen
-                mozallowfullscreen="true"
-                webkitallowfullscreen="true"
-                allow="autoplay; fullscreen; xr-spatial-tracking"
-                xr-spatial-tracking
-                execution-while-out-of-viewport
-                execution-while-not-rendered
-                web-share
-                src="https://sketchfab.com/models/d481397bfc5045469942dd74075d729a/embed"
-              >
-              </iframe>
-            </div>
-            <img
-              class="model-arrow"
-              src="images/arrow-white-right.png"
-              onclick="showModel2()"
-            />
-          </div>
-
-          <div class="thumbnail-container">
-            <button class="thumbnail" onclick="showModel1()"></button>
-            <button
-              class="thumbnail thumbnail-disabled"
-              onclick="showModel2()"
-            ></button>
-          </div>
-        </section>
-
-        <section class="model-text">
-          <h2>Subheading for model description</h2>
+      <!-- <img id="line" src="images/line2.png" /> -->
+      <div id="uranus" class="timeline-section">
+        <img class="timeline-img" src="images/uranus3.png" />
+        <div class="timeline-text">
+          <h2>URANUS</h2>
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. "Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            Not only significant for the discovery of a sixth planet, but Uranus
+            discovered in 1781 also doubled the size of the known universe.
           </p>
-        </section>
+        </div>
+      </div>
 
-        <footer>
-          <!-- <div class="bsu-links">
+      <div id="titania" class="timeline-section">
+        <img class="timeline-img" src="images/titania.png" />
+        <div class="timeline-text">
+          <h2>TITANIA</h2>
+          <p>
+            Titania discovered in 1787 is the largest moon of Uranus, it is also
+            the eight largest moon in the solar system.
+          </p>
+        </div>
+      </div>
+
+      <div id="oberon" class="timeline-section">
+        <img class="timeline-img" src="images/oberon.png" />
+        <div class="timeline-text">
+          <h2>OBERON</h2>
+          <p>
+            Titania discovered in 1787 is the largest moon of Uranus, it is also
+            the eight largest moon in the solar system.
+          </p>
+        </div>
+      </div>
+
+      <div id="mimas" class="timeline-section">
+        <img class="timeline-img" src="images/mimas.png" />
+        <div class="timeline-text">
+          <h2>MIMAS</h2>
+          <p>
+            Titania discovered in 1787 is the largest moon of Uranus, it is also
+            the eight largest moon in the solar system.
+          </p>
+        </div>
+      </div>
+
+      <div id="galaxy" class="timeline-section">
+        <img class="timeline-img" src="images/milkyway.png" />
+
+        <div class="timeline-text">
+          <h2>GALAXIES & STAR CLUSTERS</h2>
+          <p>
+            William published three catalogues, he noted that he discovered and
+            catalogued 2500 new nebulae and star clusters.
+          </p>
+        </div>
+      </div>
+
+      <section id="model-container">
+        <div class="model-nav-container">
+          <img
+            class="model-arrow model-arrow-disabled"
+            src="images/arrow-white-left.png"
+            onclick="showModel1()"
+          />
+          <div id="sketchfab-embed-wrapper">
+            <iframe
+              id="model"
+              title="Gregorian reflecting telescope (1700s)"
+              width="100%"
+              height="100%"
+              ui_hint="2"
+              frameborder="0"
+              allowfullscreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              allow="autoplay; fullscreen; xr-spatial-tracking"
+              xr-spatial-tracking
+              execution-while-out-of-viewport
+              execution-while-not-rendered
+              web-share
+              src="https://sketchfab.com/models/d481397bfc5045469942dd74075d729a/embed"
+            >
+            </iframe>
+          </div>
+          <img
+            class="model-arrow"
+            src="images/arrow-white-right.png"
+            onclick="showModel2()"
+          />
+        </div>
+
+        <div class="thumbnail-container">
+          <button class="thumbnail" onclick="showModel1()"></button>
+          <button
+            class="thumbnail thumbnail-disabled"
+            onclick="showModel2()"
+          ></button>
+        </div>
+      </section>
+
+      <section class="model-text">
+        <h2>Subheading for model description</h2>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. "Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
+
+      <!-- <footer>
+        <p>
+          Commemorating 200 years since the death of William Herschel, this
+          project aims to celebrate his work as well as the impact he had on
+          science and the way we view the universe. Showcasing Herschel's 20ft
+          telescope, this collaboration between Bath Spa University and the
+          Herschel Society in Bath will bring to life the story of the 20ft
+          telescope whilst giving furhter insight into the creation of this
+          innovative piece of technology.
+        </p>
+        <div class="bsu-links">
                     
                 <a href="https://www.bathspa.ac.uk/" target="_blank">
                     <img class="website-links" src="images/BSpaLogo.jpg"></a>
@@ -183,9 +192,8 @@
                     <a href="https://twitter.com/c_herschelsoc" target="_blank">
                       <img class="social-media-links" src="images/twitter.png"/></a> 
                     </div>
-            </div> -->
-        </footer>
-      </div>
+            </div>
+      </footer> -->
     </main>
   </body>
 </html>

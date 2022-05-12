@@ -12,9 +12,9 @@
   }
 
   header p {
-    padding: 0px 1rem;
+    padding: 0px 0px;
     font-size: 1.2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
   }
 
   .timeline-text {
@@ -91,6 +91,18 @@
     height: 10px;
     margin: 25px;
   }
+
+  h2 {
+    line-height: 3.5rem;
+  }
+
+  .model-text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    padding: 0px 50px;
+    grid-area: 9 / 1 / 10 / 7;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -104,7 +116,7 @@
   }
 
   header p {
-    padding: 0px 0.5rem;
+    padding: 0px 40px;
     font-size: 1rem;
     line-height: 2rem;
   }
@@ -183,5 +195,16 @@
     width: 8px;
     height: 8px;
     margin: 25px;
+  }
+
+  h2 {
+    line-height: 3.5rem;
+  }
+  .model-text {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    padding: 40px;
+    grid-area: 11 / 2 / 12 / 3;
   }
 }

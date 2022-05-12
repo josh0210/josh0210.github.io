@@ -82,7 +82,7 @@ h2 {
   transform: rotate(180deg);
 }
 
-#nav {
+.nav {
   list-style: none;
 }
 
@@ -219,6 +219,7 @@ ul:hover {
   font-size: 1.3rem;
   line-height: 2.5rem;
   font-weight: 400;
+  padding: 0px 200px;
   grid-area: 11 / 3 / 12 / 9;
 }
 
