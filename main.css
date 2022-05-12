@@ -123,14 +123,6 @@ ul:hover {
 
 /* timeline styles */
 
-#timeline {
-  width: 100%;
-  grid-column-start: 2;
-  grid-column-end: 12;
-  grid-row-start: 4;
-  grid-row-end: 8;
-}
-
 .timeline-section {
   min-height: 50vh;
   justify-self: center;
@@ -153,6 +145,16 @@ ul:hover {
 }
 
 /* model styles */
+
+.pre-model-text {
+  text-align: center;
+  color: #eee;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  padding: 0px 200px;
+  grid-area: 9 / 3 / 10 / 9;
+}
 
 .model-nav-container {
   display: flex;
@@ -178,13 +180,14 @@ ul:hover {
   justify-content: center;
   align-items: center;
   color: #eee;
+  min-height: 100vh;
   grid-area: 10 / 3 / 11 / 9;
 }
 
 #sketchfab-embed-wrapper {
   /* min-width: 700px;
   max-width: 1300px; */
-  width: 850px;
+  width: 900px;
   height: 800px;
   display: flex;
   justify-content: center;
@@ -213,8 +216,9 @@ ul:hover {
   cursor: pointer;
 }
 
-.model-text {
+.post-model-text {
   text-align: center;
+  min-height: 50vh;
   color: #eee;
   font-size: 1.3rem;
   line-height: 2.5rem;
@@ -228,7 +232,7 @@ ul:hover {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(12, auto);
+  grid-template-rows: repeat(15, auto);
   /* padding: 20px; */
 }
 
@@ -296,32 +300,66 @@ ul:hover {
   top: 800px;
   left: 150px;
 }
+
+/* history section */
+
+#history {
+  min-height: 100vh;
+  color: #eee;
+  text-align: center;
+  grid-area: 12 / 3 / 13 / 9;
+}
+
+#history p {
+  font-size: 1.4rem;
+}
+
+.william-img {
+  margin: 100px;
+  width: 250px;
+  height: 300px;
+}
+
+.caroline-img {
+  margin: 100px;
+  width: 250px;
+  height: 300px;
+}
+
 /*--FooterStuff--*/
 
-.bsu-links {
-  width: 100%;
+footer {
   display: flex;
-  flex-direction: column;
-  grid-column: 4 / span 4;
-  grid-row: 15 / span 2;
-  width: 100%;
-}
-.hsc-links {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  grid-column: 5 / span 4;
-  grid-row: 15 / span 2;
-  width: 100%;
+  color: #eee;
+  min-height: 50vh;
+  grid-area: 13 / 3 / 14 / 9;
 }
 
-.website-links {
-  max-width: 250px;
-  max-height: 250px;
+footer p {
+  font-size: 1.6rem;
+  width: 750px;
+  margin-left: 100px;
+}
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #eee; */
+  margin: 10px;
 }
 
 .social-container {
   display: flex;
-  margin: 30px;
-  padding: 15px;
+  justify-content: flex-start;
+}
+.company-logo {
+  width: 247px;
+  height: 274px;
+}
+
+#map {
+  background-size: contain;
+  min-width: 100%;
+  max-height: 100vh;
+  grid-area: 14 / 1 / 15 / 10;
 }

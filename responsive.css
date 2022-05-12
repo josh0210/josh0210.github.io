@@ -29,11 +29,11 @@
   }
 
   #uranus {
-    grid-area: 2 / 2 / 3 / 5;
+    grid-area: 2 / 3 / 3 / 5;
   }
 
   #titania {
-    grid-area: 3 / 2 / 4 / 5;
+    grid-area: 3 / 3 / 4 / 5;
   }
 
   #titania img {
@@ -41,7 +41,7 @@
   }
 
   #oberon {
-    grid-area: 4 / 2 / 5 / 5;
+    grid-area: 4 / 3 / 5 / 5;
   }
 
   #oberon img {
@@ -49,7 +49,7 @@
   }
 
   #mimas {
-    grid-area: 5 / 2 / 6 / 5;
+    grid-area: 5 / 3 / 6 / 5;
   }
 
   #mimas img {
@@ -57,26 +57,26 @@
   }
 
   #moons {
-    grid-area: 6 / 2 / 7 / 5;
+    grid-area: 6 / 3 / 7 / 5;
   }
 
   #galaxy {
-    grid-area: 7 / 2 / 8 / 5;
+    grid-area: 7 / 3 / 8 / 5;
   }
 
   #model-container {
-    grid-area: 8 / 2 / 9 / 6;
+    grid-area: 9 / 2 / 10 / 6;
+    width: 600px;
   }
 
   #sketchfab-embed-wrapper {
-    min-width: 250px;
-    width: 350px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
   }
 
   .thumbnail-container {
     min-width: 250px;
-    width: 350px;
+    width: 600px;
   }
 
   .model-arrow {
@@ -88,7 +88,7 @@
   }
   .thumbnail {
     width: 10px;
-    height: 10px;
+    height: 12px;
     margin: 25px;
   }
 
@@ -96,12 +96,20 @@
     line-height: 3.5rem;
   }
 
-  .model-text {
+  .pre-model-text {
     font-size: 1.2rem;
     line-height: 2.2rem;
     font-weight: 400;
     padding: 0px 50px;
-    grid-area: 9 / 1 / 10 / 7;
+    grid-area: 8 / 2 / 9 / 6;
+  }
+
+  .post-model-text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    padding: 0px 50px;
+    grid-area: 11 / 2 / 12 / 6;
   }
 }
 
@@ -170,18 +178,17 @@
   }
 
   #model-container {
-    grid-area: 10 / 2 / 11 / 3;
+    grid-area: 11 / 2 / 12 / 3;
   }
 
   #sketchfab-embed-wrapper {
-    min-width: 200px;
-    width: 350px;
-    height: 300px;
+    width: 450px;
+    height: 350px;
   }
 
   .thumbnail-container {
     min-width: 200px;
-    width: 350px;
+    width: 450px;
   }
 
   .model-arrow {
@@ -193,18 +200,28 @@
   }
   .thumbnail {
     width: 8px;
-    height: 8px;
+    height: 12px;
     margin: 25px;
   }
 
   h2 {
     line-height: 3.5rem;
+    font-size: 2.5rem;
   }
-  .model-text {
+
+  .pre-model-text {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    padding: 0px 60px;
+    grid-area: 10 / 2 / 11 / 3;
+  }
+
+  .post-model-text {
     font-size: 1rem;
     line-height: 2rem;
     font-weight: 400;
     padding: 40px;
-    grid-area: 11 / 2 / 12 / 3;
+    grid-area: 12 / 2 / 13 / 3;
   }
 }
