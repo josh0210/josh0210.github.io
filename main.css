@@ -234,7 +234,7 @@ ul:hover {
 /* timeline styles */
 
 .timeline-section {
-  min-height: 50vh;
+  min-height: 60vh;
   min-width: 100%;
   justify-self: center;
 }
