@@ -138,12 +138,13 @@ ul:hover {
 
 .pre-model-text {
   text-align: center;
-  min-height: 200px;
+  min-height: 250px;
   color: #eee;
   font-size: 1.3rem;
   line-height: 2.5rem;
   font-weight: 400;
   padding: 0px 200px;
+  margin-top: 200px;
   grid-area: 9 / 3 / 10 / 9;
 }
 
