@@ -67,6 +67,7 @@
   #model-container {
     grid-area: 9 / 2 / 10 / 6;
     width: 600px;
+    min-height: 50vh;
   }
 
   #sketchfab-embed-wrapper {
@@ -110,6 +111,72 @@
     font-weight: 400;
     padding: 0px 50px;
     grid-area: 11 / 2 / 12 / 6;
+  }
+
+  /* history section */
+
+  #history {
+    min-height: 85vh;
+    color: #eee;
+    text-align: center;
+    grid-area: 12 / 2 / 13 / 6;
+  }
+
+  #history p {
+    font-size: 1.2rem;
+    padding: 0px 40px;
+  }
+
+  .william-img {
+    margin: 100px;
+    width: 200px;
+    height: 250px;
+  }
+
+  .caroline-img {
+    margin: 100px;
+    width: 200px;
+    height: 250px;
+  }
+
+  /*--FooterStuff--*/
+
+  footer {
+    min-height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: 13 / 2 / 14 / 6;
+  }
+
+  .footer-text {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0px 40px;
+    grid-area: 14 / 2 / 15 / 6;
+  }
+
+  .company-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #eee; */
+    margin: 10px;
+  }
+
+  .social-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .company-logo {
+    width: 247px;
+    height: 274px;
+  }
+
+  #map {
+    min-width: 100%;
+    max-width: 120%;
+    max-height: 100%;
+    margin-top: 100px;
+    grid-area: 15 / 2 / 16 / 6;
   }
 }
 
@@ -178,6 +245,7 @@
   }
 
   #model-container {
+    min-height: 45vh;
     grid-area: 11 / 2 / 12 / 3;
   }
 
@@ -221,7 +289,74 @@
     font-size: 1rem;
     line-height: 2rem;
     font-weight: 400;
-    padding: 40px;
+    padding: 0 40px;
+    min-height: 30vh;
     grid-area: 12 / 2 / 13 / 3;
+  }
+
+  /* history section */
+
+  #history {
+    min-height: 80vh;
+    color: #eee;
+    text-align: center;
+    grid-area: 13 / 2 / 14 / 3;
+  }
+
+  #history p {
+    font-size: 1.2rem;
+    padding: 0px 40px;
+  }
+
+  .william-img {
+    margin: 100px;
+    width: 200px;
+    height: 250px;
+  }
+
+  .caroline-img {
+    margin: 100px;
+    width: 200px;
+    height: 250px;
+  }
+
+  /*--FooterStuff--*/
+
+  footer {
+    min-height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: 14 / 2 / 15 / 3;
+  }
+
+  .footer-text {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0px 40px;
+    grid-area: 15 / 2 / 16 / 3;
+  }
+
+  .company-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #eee; */
+    margin: 10px;
+  }
+
+  .social-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .company-logo {
+    width: 247px;
+    height: 274px;
+  }
+
+  #map {
+    min-width: 100%;
+    max-width: 120%;
+    max-height: 100%;
+    margin-top: 100px;
+    grid-area: 16 / 2 / 17 / 3;
   }
 }
