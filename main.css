@@ -306,10 +306,16 @@ ul:hover {
   justify-content: center;
 }
 
+#galaxy img {
+  min-width: 325px;
+}
+
 #line {
   position: absolute;
   top: 800px;
-  left: 150px;
+  left: 850px;
+  z-index: -1;
+  opacity: 0.4;
 }
 
 /* history section */
