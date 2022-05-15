@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&display=swap");
 
+@font-face {
+  font-family: boomer;
+  src: url(fonts/boomer_tantrum.otf);
+}
+
+@font-face {
+  font-family: prominder;
+  src: url(fonts/PROMINDER.REGULAR.OTF);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,13 +48,17 @@ header p {
 
 h1 {
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 6rem;
+  letter-spacing: 5px;
+  font-family: boomer;
 }
 
 h2 {
   font-size: 3rem;
   font-weight: 900;
-  line-height: 3rem;
+  font-family: boomer;
+  letter-spacing: 5px;
+  line-height: 3.5rem;
   margin: 0;
 }
 
@@ -124,6 +138,7 @@ ul:hover {
 
 .pre-model-text {
   text-align: center;
+  min-height: 200px;
   color: #eee;
   font-size: 1.3rem;
   line-height: 2.5rem;
@@ -194,12 +209,13 @@ ul:hover {
 
 .post-model-text {
   text-align: center;
-  min-height: 50vh;
+  min-height: 400px;
   color: #eee;
   font-size: 1.3rem;
   line-height: 2.5rem;
   font-weight: 400;
   padding: 0px 200px;
+  margin-top: 100px;
   grid-area: 11 / 3 / 12 / 9;
 }
 
@@ -297,7 +313,7 @@ ul:hover {
 /* history section */
 
 #history {
-  min-height: 100vh;
+  min-height: 250px;
   color: #eee;
   text-align: center;
   grid-area: 12 / 3 / 13 / 9;
@@ -332,7 +348,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   color: #eee;
-  min-height: 50vh;
+  min-height: 700px;
   grid-area: 13 / 4 / 14 / 6;
 }
 
