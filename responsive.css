@@ -27,6 +27,11 @@
   footer {
     grid-area: 13 / 5 / 14 / 6;
   }
+
+  #sketchfab-embed-wrapper {
+    width: 700px;
+    height: 550px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -149,8 +154,8 @@
   }
 
   #sketchfab-embed-wrapper {
-    width: 600px;
-    height: 500px;
+    width: 700px;
+    height: 550px;
   }
 
   .thumbnail-container {
@@ -375,6 +380,7 @@
 
   #history {
     min-height: 1000px;
+    margin-bottom: 100px;
     color: #eee;
     text-align: center;
     grid-area: 13 / 2 / 14 / 3;
