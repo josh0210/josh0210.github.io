@@ -4,10 +4,6 @@
     margin-right: 50px;
   }
 
-  .timeline-section {
-    min-height: 70vh;
-  }
-
   #uranus {
     grid-area: 2 / 4 / 3 / 6;
   }
@@ -142,7 +138,7 @@
   }
 
   #uranus img {
-    min-width: 180px;
+    min-width: 150px;
   }
 
   #titania {
@@ -163,6 +159,10 @@
 
   #galaxy {
     grid-area: 7 / 3 / 8 / 5;
+  }
+
+  #galaxy img {
+    min-width: 150px;
   }
 
   #model-container {
@@ -338,7 +338,7 @@
   }
 
   #uranus img {
-    min-width: 180px;
+    min-width: 150px;
   }
 
   #titania {
@@ -355,6 +355,10 @@
 
   #galaxy {
     grid-area: 9 / 2 / 10 / 3;
+  }
+
+  #galaxy img {
+    min-width: 150px;
   }
 
   #model-container {
