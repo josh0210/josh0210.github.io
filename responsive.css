@@ -63,6 +63,11 @@
   #galaxy {
     grid-area: 6 / 2 / 7 / 6;
   }
+
+  /* #sketchfab-embed-wrapper {
+    width: 700px;
+    height: 550px;
+  } */
 }
 
 @media screen and (max-width: 1100px) {
@@ -90,6 +95,11 @@
   #galaxy {
     grid-area: 6 / 2 / 7 / 6;
   }
+
+  /* #sketchfab-embed-wrapper {
+    width: 700px;
+    height: 550px;
+  } */
 }
 
 @media screen and (max-width: 800px) and (min-width: 481px) {
@@ -150,7 +160,7 @@
   #model-container {
     grid-area: 9 / 2 / 10 / 6;
     width: 600px;
-    min-height: 50vh;
+    /* min-height: 50vh; */
   }
 
   #sketchfab-embed-wrapper {
@@ -159,8 +169,8 @@
   }
 
   .thumbnail-container {
-    min-width: 250px;
-    width: 600px;
+    /* min-width: 250px; */
+    width: 700px;
   }
 
   .model-arrow {

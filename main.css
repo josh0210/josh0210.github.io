@@ -172,7 +172,7 @@ ul:hover {
   justify-content: center;
   align-items: center;
   color: #eee;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   grid-area: 10 / 3 / 11 / 9;
 }
 
