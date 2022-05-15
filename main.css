@@ -312,7 +312,7 @@ ul:hover {
 
 #history p {
   font-size: 1.4rem;
-  padding: 0px 200px;
+  padding: 0px 400px;
 }
 
 .history-img-container {
@@ -337,17 +337,17 @@ ul:hover {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   color: #eee;
   min-height: 50vh;
-  grid-area: 13 / 3 / 14 / 5;
+  grid-area: 13 / 4 / 14 / 6;
 }
 
 .footer-text {
   color: #eee;
   font-size: 1.6rem;
-  /* width: 750px; */
-  grid-area: 13 / 5 / 14 / 9;
+  width: 650px;
+  grid-area: 13 / 7 / 14 / 9;
 }
 
 .company-container {
