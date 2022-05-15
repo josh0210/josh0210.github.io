@@ -34,7 +34,6 @@ header p {
   font-size: 1.8rem;
   line-height: 2.5rem;
   font-weight: 700;
-  padding: 0px 200px;
 }
 
 h1 {
@@ -119,29 +118,6 @@ ul:hover {
   margin-bottom: 100px;
   /* grid-column-start: 2;
   grid-column-end: 12; */
-}
-
-/* timeline styles */
-
-.timeline-section {
-  min-height: 50vh;
-  justify-self: center;
-}
-
-.timeline-text {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: #fff;
-  padding: 30px;
-  min-width: 350px;
-  max-width: 300px;
-  /* grid-column-start: 3;
-  grid-column-end: 11; */
-}
-
-.timeline-img {
-  width: 200px;
-  margin-right: 50px;
 }
 
 /* model styles */
@@ -233,7 +209,32 @@ ul:hover {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(18, auto);
+  max-width: 1800px;
   /* padding: 20px; */
+}
+
+/* timeline styles */
+
+.timeline-section {
+  min-height: 50vh;
+  min-width: 100%;
+  justify-self: center;
+}
+
+.timeline-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #fff;
+  padding: 30px;
+  min-width: 350px;
+  max-width: 300px;
+  /* grid-column-start: 3;
+  grid-column-end: 11; */
+}
+
+.timeline-img {
+  max-width: 180px;
+  margin-right: 50px;
 }
 
 /* column classes */
@@ -242,22 +243,22 @@ ul:hover {
   display: flex;
   width: 100%;
   padding: 25px;
-  grid-area: 2 / 3 / 3 / 4;
+  grid-area: 2 / 3 / 3 / 5;
   align-items: center;
   justify-content: center;
+}
+
+#uranus img {
+  min-width: 250px;
 }
 
 #titania {
   display: flex;
   width: 100%;
   padding: 25px;
-  grid-area: 3 / 7 / 4 / 8;
+  grid-area: 3 / 8 / 4 / 9;
   align-items: center;
   justify-content: center;
-}
-
-#titania img {
-  max-width: 110px;
 }
 
 #oberon {
@@ -269,28 +270,20 @@ ul:hover {
   justify-content: center;
 }
 
-#oberon img {
-  max-width: 100px;
-}
-
 #mimas {
   display: flex;
   width: 100%;
   padding: 25px;
-  grid-area: 5 / 8 / 6 / 6;
+  grid-area: 5 / 7 / 6 / 9;
   align-items: center;
   justify-content: center;
-}
-
-#mimas img {
-  max-width: 90px;
 }
 
 #galaxy {
   display: flex;
   width: 100%;
   padding: 25px;
-  grid-area: 6 / 3 / 7 / 4;
+  grid-area: 6 / 3 / 7 / 5;
   align-items: center;
   justify-content: center;
 }
@@ -312,7 +305,7 @@ ul:hover {
 
 #history p {
   font-size: 1.4rem;
-  padding: 0px 400px;
+  padding: 0px 200px;
 }
 
 .history-img-container {
@@ -345,6 +338,7 @@ footer {
 
 .footer-text {
   color: #eee;
+  align-self: center;
   font-size: 1.6rem;
   width: 650px;
   grid-area: 13 / 7 / 14 / 9;
@@ -353,6 +347,7 @@ footer {
 .company-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* background-color: #eee; */
   margin: 10px;
 }

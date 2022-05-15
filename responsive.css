@@ -1,9 +1,99 @@
-@media screen and (max-width: 801px) and (min-width: 1920px) {
+@media screen and (max-width: 1600px) {
+  .timeline-img {
+    width: 200px;
+    margin-right: 50px;
+  }
+
+  #uranus {
+    grid-area: 2 / 4 / 3 / 6;
+  }
+
+  #titania {
+    grid-area: 3 / 8 / 4 / 9;
+  }
+  #oberon {
+    grid-area: 4 / 4 / 5 / 6;
+  }
+
+  #mimas {
+    grid-area: 5 / 7 / 6 / 9;
+  }
+
+  #galaxy {
+    grid-area: 6 / 4 / 7 / 6;
+  }
+
+  footer {
+    grid-area: 13 / 5 / 14 / 6;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .timeline-img {
+    width: 150px;
+    margin-right: 50px;
+  }
+
+  #uranus {
+    grid-area: 2 / 6 / 3 / 7;
+  }
+
+  #uranus img {
+    min-width: 200px;
+  }
+
+  #titania {
+    grid-area: 3 / 8 / 4 / 9;
+  }
+
+  #oberon {
+    grid-area: 4 / 6 / 5 / 7;
+  }
+
+  #mimas {
+    grid-area: 5 / 7 / 6 / 9;
+  }
+
+  #galaxy {
+    grid-area: 6 / 6 / 7 / 7;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .timeline-img {
+    width: 150px;
+    margin-right: 50px;
+  }
+
+  #uranus {
+    grid-area: 2 / 7 / 3 / 8;
+  }
+
+  #titania {
+    grid-area: 3 / 8 / 4 / 9;
+  }
+
+  #oberon {
+    grid-area: 4 / 7 / 5 / 8;
+  }
+
+  #mimas {
+    grid-area: 5 / 7 / 6 / 9;
+  }
+
+  #galaxy {
+    grid-area: 6 / 6 / 7 / 8;
+  }
 }
 
 @media screen and (max-width: 800px) and (min-width: 481px) {
   .grid-container {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .timeline-img {
+    width: 120px;
+    margin-right: 50px;
   }
 
   header {
@@ -23,37 +113,24 @@
     padding: 0px;
   }
 
-  .timeline-img {
-    width: 150px;
-    /* max-width: 100px; */
-  }
-
   #uranus {
     grid-area: 2 / 3 / 3 / 5;
+  }
+
+  #uranus img {
+    min-width: 180px;
   }
 
   #titania {
     grid-area: 3 / 3 / 4 / 5;
   }
 
-  #titania img {
-    max-width: 80px;
-  }
-
   #oberon {
     grid-area: 4 / 3 / 5 / 5;
   }
 
-  #oberon img {
-    max-width: 70px;
-  }
-
   #mimas {
     grid-area: 5 / 3 / 6 / 5;
-  }
-
-  #mimas img {
-    max-width: 60px;
   }
 
   #moons {
@@ -185,6 +262,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .timeline-img {
+    width: 120px;
+    margin-right: 50px;
+  }
+
   header {
     grid-area: 1 / 1 / 2 / 3;
     font-size: 1.2rem;
@@ -212,32 +294,20 @@
     grid-area: 4 / 2 / 5 / 3;
   }
 
-  #titania {
-    grid-area: 5 / 2 / 6 / 3;
+  #uranus img {
+    min-width: 180px;
   }
 
-  #titania img {
-    max-width: 60px;
+  #titania {
+    grid-area: 5 / 2 / 6 / 3;
   }
 
   #oberon {
     grid-area: 6 / 2 / 7 / 3;
   }
 
-  #oberon img {
-    max-width: 50px;
-  }
-
   #mimas {
     grid-area: 7 / 2 / 8 / 3;
-  }
-
-  #mimas img {
-    max-width: 40px;
-  }
-
-  #moons {
-    grid-area: 8 / 2 / 9 / 3;
   }
 
   #galaxy {
