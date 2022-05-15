@@ -123,6 +123,10 @@
     line-height: 2rem;
   }
 
+  h1 {
+    font-size: 4rem;
+  }
+
   .timeline-text {
     line-height: 2rem;
     width: 0%;
@@ -304,6 +308,10 @@
     line-height: 2rem;
   }
 
+  h1 {
+    font-size: 4rem;
+  }
+
   .timeline-text {
     padding: 0px;
     line-height: 2rem;
@@ -394,10 +402,8 @@
   /* history section */
 
   #history {
-    min-height: 1000px;
+    min-height: 1200px;
     /* margin-bottom: 100px; */
-    color: #eee;
-    text-align: center;
     grid-area: 13 / 2 / 14 / 3;
   }
 
