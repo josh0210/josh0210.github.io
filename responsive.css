@@ -4,6 +4,10 @@
     margin-right: 50px;
   }
 
+  .timeline-section {
+    min-height: 70vh;
+  }
+
   #uranus {
     grid-area: 2 / 4 / 3 / 6;
   }

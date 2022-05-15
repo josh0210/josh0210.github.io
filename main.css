@@ -36,7 +36,7 @@ header {
   /* max-width: 1450px;
   min-width: 400px; */
   font-size: 2rem;
-  text-align: center;
+  margin-bottom: 300px;
   grid-area: 1 / 1 / 2 / 11;
 }
 
