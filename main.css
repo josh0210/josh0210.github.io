@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 @font-face {
   font-family: boomer;
@@ -11,8 +12,19 @@
   src: url(fonts/PROMINDER.REGULAR.OTF);
 }
 
+@font-face {
+  font-family: nexa;
+  src: url(fonts/NexaText-Trial-Bold.ttf) format("ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 html {
   scroll-behavior: smooth;
+  margin: 0px;
 }
 body {
   /* min-width: 100vw; */
@@ -23,35 +35,43 @@ body {
   background: url(images/WebsiteBackGroundWithTelescope.jpg);
   background-repeat: no-repeat;
   background-color: #010101;
-  font-family: "Overlock", cursive;
+  font-family: "Lato", sans-serif;
 }
 
 /* header styles*/
 
 header {
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   color: #eee;
   /* padding: 30px; */
   width: 100%;
+  min-height: 100vh;
   /* max-width: 1450px;
   min-width: 400px; */
   font-size: 2rem;
-  margin-bottom: 300px;
+  /* margin-bottom: 300px; */
+  background-color: rgba(73, 66, 104, 0.918);
+  z-index: 1;
   grid-area: 1 / 1 / 2 / 11;
 }
 
-header p {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  font-weight: 700;
-  padding: 0px 200px;
-}
-
-h1 {
+header h1 {
+  text-align: center;
   font-weight: 900;
   font-size: 6rem;
   letter-spacing: 5px;
   font-family: boomer;
+  /* grid-area: 1 / 1 / 2 / 5; */
+}
+
+header p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  width: 500px;
+  /* grid-area: 1 / 8 / 2 / 11; */
 }
 
 h2 {
@@ -82,6 +102,7 @@ h2 {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   transition: all 0.75s;
+  z-index: 2;
 }
 
 #nav-arrow {
@@ -228,6 +249,7 @@ ul:hover {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(18, auto);
   max-width: 1800px;
+  margin: 0px;
   /* padding: 20px; */
 }
 
