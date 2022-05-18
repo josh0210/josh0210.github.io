@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@700;900&display=swap');
 
 @font-face {
   font-family: boomer;
@@ -57,12 +57,22 @@ header {
   grid-area: 1 / 1 / 2 / 11;
 }
 
-header h1 {
+.rectangle {
+  position: absolute;
+  min-width: 1000px;
+  max-width: 100%;
+  max-height: 700px ;
+  top: 17%;
+  transform: rotate(7deg);
+  z-index: -1;
+}
+
+h1 {
   text-align: center;
   font-weight: 900;
   font-size: 8rem;
   letter-spacing: 5px;
-  font-family: boomer;
+  font-family: 'Poppins', sans-serif;
   padding: 20px;
   /* grid-area: 1 / 1 / 2 / 5; */
 }
@@ -83,18 +93,6 @@ header h1 {
   /* grid-area: 1 / 8 / 2 / 11; */
 }
 
-.shape {
-  position: absolute;
-  top: 100px;
-  left: 150px;
-  offset-position: 100px 200px;
-  width: 500px;
-  height: 200px;
-  background: rgb(147, 89, 202);
-  opacity: 0.5;
-  border-radius: 250px / 100px;
-}
-
 .header-container {
   display: flex;
   flex-direction: column;
@@ -102,21 +100,33 @@ header h1 {
   align-items: center;
 }
 
-#header-arrow {
+#header-arrow-desktop {
   width: 150px;
   height: 180px;
   cursor: pointer;
   transition: all 1s;
 }
 
-#header-arrow:hover {
+#header-arrow-desktop:hover {
+  transform: translateY(75px);
+}
+
+#header-arrow-mobile {
+  display: none;
+  width: 150px;
+  height: 180px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+#header-arrow-mobile:hover {
   transform: translateY(75px);
 }
 
 h2 {
   font-size: 3rem;
   font-weight: 900;
-  font-family: boomer;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 5px;
   line-height: 3.5rem;
   margin: 0;
@@ -277,7 +287,7 @@ ul:hover {
   line-height: 2.5rem;
   font-weight: 400;
   padding: 0px 200px;
-  margin-top: 100px;
+  margin-top: 50px;
   grid-area: 11 / 3 / 12 / 9;
 }
 
