@@ -119,10 +119,6 @@ h1 {
   transition: all 1s;
 }
 
-#header-arrow-mobile:hover {
-  transform: translateY(75px);
-}
-
 h2 {
   font-size: 3rem;
   font-weight: 900;
