@@ -1,6 +1,6 @@
 function showModel1() {
   document.getElementById("model").src =
-    "https://sketchfab.com/models/d481397bfc5045469942dd74075d729a/embed";
+    "https://sketchfab.com/models/60e8c68180094d21a83f2340aa8d6013/embed";
   document
     .getElementsByClassName("thumbnail")[1]
     .classList.add("thumbnail-disabled");
