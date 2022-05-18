@@ -4,6 +4,10 @@
     margin-right: 50px;
   }
 
+  .timeline-section {
+    min-height: 70vh;
+  }
+
   #header-arrow-desktop {
     width: 130px;
     height: 160px;
@@ -28,7 +32,7 @@
   }
   
   #header-arrow-desktop:hover {
-    transform: translateY(50px);
+    transform: translateY(45px);
   }
 
   #uranus {
@@ -137,6 +141,10 @@
   .timeline-img {
     width: 120px;
     margin-right: 50px;
+  }
+
+  .timeline-section {
+    min-height: 60vh;
   }
 
   header {
