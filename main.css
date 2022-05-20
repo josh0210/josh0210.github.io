@@ -321,8 +321,8 @@ ul:hover {
 
 .star {
   position: absolute;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: white;
   border-radius: 100%;
   right: 50%;
@@ -417,13 +417,14 @@ ul:hover {
 #history {
   min-height: 250px;
   color: #eee;
-  text-align: center;
   grid-area: 12 / 3 / 13 / 9;
+  text-align: center;
 }
 
 #history p {
   font-size: 1.4rem;
   padding: 0px 200px;
+  text-align: left;
 }
 
 .history-img-container {
