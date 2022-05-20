@@ -45,3 +45,15 @@ function closeNav() {
   document.getElementById("nav-arrow").onclick = openNav;
   document.getElementById("nav-arrow").classList.remove("arrow-rotate");
 }
+
+function createStars() {
+  for (const section of document.getElementsByClassName("timeline-section")) {
+    for (i = 0; i <= 50; i++) {
+      let star = document.createElement("div");
+      star.classList.add("star");
+      star.style.left = Math.random() * 100 + "%";
+      star.style.top = Math.random() * 100 + "%";
+      section.appendChild(star);
+    }
+  }
+}
