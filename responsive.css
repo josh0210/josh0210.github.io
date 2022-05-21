@@ -27,8 +27,6 @@
     padding: 0px 45px;
     align-self: center;
     background-color: rgba(73, 66, 104, 0.582);
-    /* border-radius: 50%; */
-    /* grid-area: 1 / 8 / 2 / 11; */
   }
 
   #header-arrow-desktop:hover {
@@ -99,11 +97,6 @@
   #galaxy {
     grid-area: 6 / 2 / 7 / 6;
   }
-
-  /* #sketchfab-embed-wrapper {
-    width: 700px;
-    height: 550px;
-  } */
 }
 
 @media screen and (max-width: 1100px) {
@@ -131,11 +124,6 @@
   #galaxy {
     grid-area: 6 / 2 / 7 / 6;
   }
-
-  /* #sketchfab-embed-wrapper {
-    width: 700px;
-    height: 550px;
-  } */
 }
 
 @media screen and (max-width: 800px) and (min-width: 481px) {
@@ -156,11 +144,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* padding: 30px; */
     width: 100%;
     min-height: 100vh;
-    /* max-width: 1450px;
-    min-width: 400px; */
     font-size: 1.4rem;
     margin-bottom: 100px;
     background-color: rgba(73, 66, 104, 0.61);
@@ -179,8 +164,6 @@
     padding: 75px;
     align-self: center;
     background-color: rgba(73, 66, 104, 0.582);
-    /* border-radius: 50%; */
-    /* grid-area: 1 / 8 / 2 / 11; */
   }
 
   .header-container {
@@ -245,7 +228,6 @@
   #model-container {
     grid-area: 9 / 2 / 10 / 6;
     width: 600px;
-    /* min-height: 50vh; */
   }
 
   #sketchfab-embed-wrapper {
@@ -254,7 +236,6 @@
   }
 
   .thumbnail-container {
-    /* min-width: 250px; */
     width: 700px;
   }
 
@@ -341,7 +322,6 @@
   .company-container {
     display: flex;
     flex-direction: column;
-    /* background-color: #eee; */
     margin: 10px;
   }
 
@@ -390,17 +370,15 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* padding: 30px; */
     width: 100%;
     min-height: 100vh;
-    /* max-width: 1450px;
-    min-width: 400px; */
     font-size: 1.2rem;
     margin-bottom: 100px;
     background-color: transparent;
     z-index: 1;
     grid-area: 1 / 1 / 2 / 3;
   }
+
   .header-p-text {
     display: flex;
     justify-items: center;
@@ -414,8 +392,6 @@
     border-radius: 50%;
     align-self: center;
     background-color: rgba(73, 66, 104, 0.61);
-    /* border-radius: 50%; */
-    /* grid-area: 1 / 8 / 2 / 11; */
   }
 
   .header-container {
@@ -447,8 +423,6 @@
 
   .timeline-img {
     width: 120px;
-    /* max-width: 100px; */
-    /* max-height: 50%; */
   }
 
   #uranus {
@@ -540,7 +514,6 @@
 
   #history {
     min-height: 1100px;
-    /* margin-bottom: 100px; */
     grid-area: 13 / 2 / 14 / 3;
   }
 
@@ -575,14 +548,12 @@
     font-size: 1.2rem;
     padding: 0px 100px;
     margin: 50px 0px;
-    /* margin: 100px 0px; */
     grid-area: 15 / 2 / 16 / 3;
   }
 
   .company-container {
     display: flex;
     flex-direction: column;
-    /* background-color: #eee; */
     margin: 10px;
   }
 

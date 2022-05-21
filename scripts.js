@@ -48,7 +48,7 @@ function closeNav() {
 
 function createStars() {
   for (const section of document.getElementsByClassName("timeline-section")) {
-    for (i = 0; i <= 50; i++) {
+    for (i = 0; i <= 75; i++) {
       let star = document.createElement("div");
       star.classList.add("star");
       star.style.left = Math.random() * 100 + "%";
