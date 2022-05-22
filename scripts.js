@@ -57,3 +57,71 @@ function createStars() {
     }
   }
 }
+
+function changeModel() {
+  let counter = 0;
+  document
+    .getElementById("carousel-controls")
+    .addEventListener("click", function (e) {
+      let children = document.getElementById("carousel").children;
+      let element = e.target;
+      let action = element.dataset.action;
+
+      if (action) {
+        if (action == "prev") {
+          if (counter != 0) {
+            counter--;
+          }
+        } else {
+          if (counter < 1) {
+            counter++;
+          }
+        }
+      }
+
+      document
+        .getElementById("carousel")
+        .children[counter].scrollIntoView({ behavior: "smooth" });
+      console.log(counter);
+
+      let video = document.getElementById("video");
+      video.pause();
+    });
+  document
+    .getElementsByClassName("thumbnail")[1]
+    .classList.add("thumbnail-disabled");
+  document
+    .getElementsByClassName("thumbnail")[0]
+    .classList.remove("thumbnail-disabled");
+}
+
+function showVideo() {
+  document.getElementById("carousel").children[0].scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "start",
+  });
+  document
+    .getElementsByClassName("thumbnail")[0]
+    .classList.remove("thumbnail-disabled");
+  document
+    .getElementsByClassName("thumbnail")[1]
+    .classList.add("thumbnail-disabled");
+  console.log(document.getElementById("carousel").children[0]);
+}
+
+function showModel() {
+  document.getElementById("carousel").children[1].scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "start",
+  });
+  console.log(document.getElementById("carousel").children);
+  document
+    .getElementsByClassName("thumbnail")[0]
+    .classList.add("thumbnail-disabled");
+  document
+    .getElementsByClassName("thumbnail")[1]
+    .classList.remove("thumbnail-disabled");
+  console.log(document.getElementById("carousel").children[1]);
+}

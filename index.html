@@ -125,13 +125,63 @@
       </section>
 
       <section id="model-container">
+        <!-- <img
+          class="model-arrow model-arrow-disabled"
+          src="images/arrow-white-left.png"
+          onclick="showModel1()"
+        /> -->
         <div class="model-nav-container">
-          <img
-            class="model-arrow model-arrow-disabled"
-            src="images/arrow-white-left.png"
-            onclick="showModel1()"
-          />
-          <div id="sketchfab-embed-wrapper">
+          <div id="carousel">
+            <div id="sketchfab-embed-wrapper" class="carousel-item">
+              <iframe
+                id="model"
+                title="Gregorian reflecting telescope (1700s)"
+                width="100%"
+                height="100%"
+                ui_hint="2"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+                src="https://sketchfab.com/models/60e8c68180094d21a83f2340aa8d6013/embed"
+              >
+              </iframe>
+            </div>
+            <video
+              id="video"
+              class="carousel-item"
+              src="/model-video.mp4"
+              type="video/mp4"
+              controls
+            ></video>
+          </div>
+        </div>
+        <div id="carousel-controls">
+          <button
+            class="thumbnail"
+            data-action="prev"
+            onclick="showVideo()"
+          ></button>
+          <button
+            class="thumbnail thumbnail-disabled"
+            data-action="next"
+            onclick="showModel()"
+          ></button>
+        </div>
+
+        <!-- <img
+          class="model-arrow"
+          src="images/arrow-white-right.png"
+          onclick="showModel2()"
+        /> -->
+      </section>
+
+      <!-- <div id="sketchfab-embed-wrapper">
             <iframe
               id="model"
               title="Gregorian reflecting telescope (1700s)"
@@ -150,22 +200,8 @@
               src="https://sketchfab.com/models/60e8c68180094d21a83f2340aa8d6013/embed"
             >
             </iframe>
-          </div>
-          <img
-            class="model-arrow"
-            src="images/arrow-white-right.png"
-            onclick="showModel2()"
-          />
-        </div>
-
-        <div class="thumbnail-container">
-          <button class="thumbnail" onclick="showModel1()"></button>
-          <button
-            class="thumbnail thumbnail-disabled"
-            onclick="showModel2()"
-          ></button>
-        </div>
-      </section>
+          </div> -->
+      <!-- <video class="model-video"></video> -->
 
       <section class="post-model-text">
         <p>
