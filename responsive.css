@@ -365,6 +365,10 @@
     margin-right: 50px;
   }
 
+  .timeline-section {
+    min-height: 35vh;
+  }
+
   .nav-container {
     font-size: 1.2rem;
   }

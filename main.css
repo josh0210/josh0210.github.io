@@ -273,13 +273,6 @@ ul:hover {
   grid-area: 10 / 3 / 11 / 9;
 }
 
-/* #sketchfab-embed-wrapper {
-  width: 900px;
-  height: 800px;
-  display: flex;
-  justify-content: center;
-} */
-
 #carousel-controls {
   display: flex;
   justify-content: space-evenly;
