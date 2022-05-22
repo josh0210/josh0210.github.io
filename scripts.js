@@ -108,6 +108,8 @@ function showVideo() {
     .getElementsByClassName("model-arrow")[1]
     .classList.remove("model-arrow-disabled");
   console.log(document.getElementById("carousel").children[0]);
+  let video = document.getElementById("video");
+  video.pause();
 }
 
 function showModel() {
@@ -124,4 +126,6 @@ function showModel() {
     .getElementsByClassName("model-arrow")[1]
     .classList.add("model-arrow-disabled");
   console.log(document.getElementById("carousel").children[1]);
+  let video = document.getElementById("video");
+  video.play();
 }
