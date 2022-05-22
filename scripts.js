@@ -102,11 +102,11 @@ function showVideo() {
     inline: "start",
   });
   document
-    .getElementsByClassName("thumbnail")[0]
-    .classList.remove("thumbnail-disabled");
+    .getElementsByClassName("model-arrow")[0]
+    .classList.add("model-arrow-disabled");
   document
-    .getElementsByClassName("thumbnail")[1]
-    .classList.add("thumbnail-disabled");
+    .getElementsByClassName("model-arrow")[1]
+    .classList.remove("model-arrow-disabled");
   console.log(document.getElementById("carousel").children[0]);
 }
 
@@ -118,10 +118,10 @@ function showModel() {
   });
   console.log(document.getElementById("carousel").children);
   document
-    .getElementsByClassName("thumbnail")[0]
-    .classList.add("thumbnail-disabled");
+    .getElementsByClassName("model-arrow")[0]
+    .classList.remove("model-arrow-disabled");
   document
-    .getElementsByClassName("thumbnail")[1]
-    .classList.remove("thumbnail-disabled");
+    .getElementsByClassName("model-arrow")[1]
+    .classList.add("model-arrow-disabled");
   console.log(document.getElementById("carousel").children[1]);
 }
